@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route della homepage
 Route::get('/', function () {
 
     $anonymous = [
@@ -23,7 +24,27 @@ Route::get('/', function () {
     ];
 
     return view('home', $anonymous);
-});
+})->name('homepage');
+
+// Route about-us
+Route::get('/about', function () {
+
+    return view('about-us');
+})->name('our-team');
+
+
+// Route our-goals
+Route::get('/goals', function () {
+
+    return view('goals');
+})->name('our-goals');
+
+
+// Route join-us
+Route::get('/join', function () {
+
+    return view('join-us');
+})->name('join-us');
 
 
 

@@ -7,8 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+    {{-- Header --}}
+    <header>
+        <h3>Link informativi:</h3>
+        <ul>
+            <li>
+                <a href="{{ route('our-team')}}">Chi Siamo</a>
+            </li>
+            <li>
+                <a href="{{ route('our-goals')}}">I nostri obiettivi</a>
+            </li>
+            <li>
+                <a href="{{ route('join-us')}}">Unisciti a noi</a>
+            </li>
+            
+        </ul>
+    </header>
+
+    {{-- Page-Ttile --}}
     <h1>Hello Word</h1>
 
+    {{-- Leader --}}
     <div>
         <h3>Capo Partito</h3>
         <div>Nome: {{ $name }}</div>
@@ -16,6 +35,7 @@
 
     </div>
 
+    {{-- List-undersecretaries  --}}
     <div>
         <h3>Sottosegretari:</h3>
         <div>
