@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $anonymous = [
+        'name' => 'John',
+        'lastname' => 'Doe',
+        'undersecretaries' => ['PincoPallo', 'Mario Bianchi', 'Giuseppe Verdi'],
+
+    ];
+
+    return view('home', $anonymous);
 });
+
+
+
+
